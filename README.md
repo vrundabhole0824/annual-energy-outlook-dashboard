@@ -1,4 +1,9 @@
-# Chart
+# Annual energy outlook dashboard
+
+![Screenshot (930)](https://github.com/user-attachments/assets/d60f10a1-f5c0-4da0-86a4-5f625b94a614)
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
