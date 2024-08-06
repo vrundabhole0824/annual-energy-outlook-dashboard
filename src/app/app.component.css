@@ -1,0 +1,61 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+::ng-deep label {
+    padding-bottom: 10px;
+
+}
+
+::ng-deep.p-dropdown {
+    width: 100% !important;
+}
+
+::ng-deep.p-dropdown-items-wrapper {
+    width: 300px;
+}
+
+.dropdowndiv {
+    width: 300px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    width: 100vh;
+    /* padding-top: 30px; */
+
+}
+
+.newClass {
+    display: flex;
+}
+
+.formCss {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-radius: 30px;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(251, 225, 78, 0.8604691876750701) 0%, rgba(255, 255, 255, 1) 100%);
+    border: .1px solid rgb(220, 220, 220);
+}
+
+.insight {
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+
+#topic {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 22px;
+}

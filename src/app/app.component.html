@@ -1,0 +1,69 @@
+<div class="newClass">
+  <form [formGroup]="dropDownForm" class="formCss">
+    <div style="display: flex;gap: 30px;">
+      <div>
+        
+        <div>
+          <label>Select country</label>
+        </div>
+        <div class="dropdowndiv">
+          <p-dropdown #countryValue formControlName="country" [options]="response" optionLabel="country"></p-dropdown>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label>Select topic</label>
+        </div>
+        <div class="dropdowndiv">
+          <p-dropdown #topicValue formControlName="topic" [options]="response" optionLabel="topic"></p-dropdown>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex;gap: 30px;">
+      <div>
+        <div>
+          <label>Select sector</label>
+        </div>
+        <div class="dropdowndiv">
+          <p-dropdown #sectorValue formControlName="sector" [options]="response" optionLabel="sector"></p-dropdown>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label>Select region</label>
+        </div>
+        <div class="dropdowndiv">
+          <p-dropdown #regionValue formControlName="region" [options]="response" optionLabel="region"></p-dropdown>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex;gap: 30px;">
+      <div>
+        <div>
+          <label>Select Source</label>
+        </div>
+        <div class="dropdowndiv">
+          <p-dropdown #sourceValue formControlName="source" [options]="response" optionLabel="source"></p-dropdown>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label>Select PEST</label>
+        </div>
+        <div class="dropdowndiv">
+          <p-dropdown #pestleValue formControlName="pestle" [options]="response" optionLabel="pestle"></p-dropdown>
+        </div>
+      </div>
+    </div>
+    <button pButton pRipple class="p-button-success"
+      (click)="applyFilter(countryValue.value.country, sectorValue.value.sector, topicValue.value.topic, regionValue.value.region,sourceValue.value.source,pestleValue.value.pestle)">Apply
+      Filter</button>
+  </form>
+  <div class="chart-container">
+    <div id="topic">
+      <div *ngIf="showTopic" class="insight">{{insight}}</div>
+      <span>{{title}}</span>
+    </div>
+    <canvas id="piechart"></canvas>
+  </div>
+</div>
